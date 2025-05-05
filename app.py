@@ -748,7 +748,7 @@ lgbm_model = LGBMRegressor(
 lgbm_model.fit(X_train, y_train)
 # Making predictions and evaluation
 y_pred_lgbm = lgbm_model.predict(X_test)
-mse_lgbm = mean_squared_error(y_test, y_pred_lgbm, squared=False)
+mse_lgbm = np.sqrt(mean_squared_error(y_test, y_pred_lgbm))
 r2_lgbm = r2_score(y_test, y_pred_lgbm)
 st.markdown(f"LightGBM RMSE: {mse_lgbm:.2f}")
 st.markdown(f"LightGBM R²: {r2_lgbm:.2f}")
