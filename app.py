@@ -318,7 +318,7 @@ y_pred = linear_model.predict(X_test)
 
 # Evaluate performance using R² and RMSE
 r2 = r2_score(y_test, y_pred)
-rmse = mean_squared_error(y_test, y_pred, squared=False)
+rmse = np.sqrt(mean_squared_error(y_test, y_pred))
 
 
 # Function to calculate adjusted R2
@@ -516,11 +516,11 @@ rf_model.fit(X_train, y_train)
 y_pred = rf_model.predict(X_test)
 
 # Evaluating the model
-RMSE = mean_squared_error(y_test, y_pred, squared=False)
+RMSE = np.sqrt(mean_squared_error(y_test, y_pred))
 R2 = r2_score(y_test, y_pred)
 
 rf_predictions = rf_model.predict(X_test)
-RMSE = mean_squared_error(y_test, rf_predictions, squared=False)
+RMSE = np.sqrt(mean_squared_error(y_test, rf_predictions))
 R2 = r2_score(y_test, rf_predictions)
 st.markdown(f"Base Random Forest Model RMSE: {RMSE:.2f}")
 st.markdown(f"Base Random Forest model R2: {R2:.2f}")
@@ -578,11 +578,16 @@ rf_model.fit(X_train, y_train)
 y_pred = rf_model.predict(X_test)
 
 # Evaluating the model
-RMSE = mean_squared_error(y_test, y_pred, squared=False)
+RMSE = np.sqrt(
+    mean_squared_error(
+        y_test,
+        y_pred,
+    )
+)
 R2 = r2_score(y_test, y_pred)
 
 rf_predictions = rf_model.predict(X_test)
-RMSE = mean_squared_error(y_test, rf_predictions, squared=False)
+RMSE = np.sqrt(mean_squared_error(y_test, rf_predictions))
 R2 = r2_score(y_test, rf_predictions)
 # Tuned RF model
 final_model = RandomForestRegressor(
@@ -629,7 +634,7 @@ print(f"Tuned Random Forest model adjusted R2: {r2_adj:.3f}")
 """)
 
 predictions = final_model.predict(X_test)
-RMSE = mean_squared_error(y_test, predictions, squared=False)
+RMSE = np.sqrt(mean_squared_error(y_test, predictions))
 R2 = r2_score(y_test, predictions)
 st.write(f"Tuned Random Forest Model RMSE: {RMSE:.2f}")
 st.write(f"Tuned Random Forest model R2: {R2:.2f}")
@@ -795,7 +800,7 @@ xgb_model = XGBRegressor(
 xgb_model.fit(X_train, y_train)
 # Predictions and evaluation
 y_pred_xgb = xgb_model.predict(X_test)
-mse_xgb = mean_squared_error(y_test, y_pred_xgb, squared=False)
+mse_xgb = np.sqrt(mean_squared_error(y_test, y_pred_xgb))
 r2_xgb = r2_score(y_test, y_pred_xgb)
 st.markdown(f"XGBoost MSE: {mse_xgb:.2f}")
 st.markdown(f"XGBoost R²: {r2_xgb:.2f}")
