@@ -17,13 +17,8 @@ st.write("Enter the details below to predict insurance charges:")
 
 
 # Load model and preprocessor
-def load_artifacts():
-    model = joblib.load("utils/final_model.pkl")
-    preprocessor = joblib.load("utils/preprocessor.pkl")
-    return preprocessor, model
-
-
-preprocessor, model = load_artifacts()
+model = joblib.load("utils/final_model.pkl")
+preprocessor = joblib.load("utils/preprocessor.pkl")
 
 # User Inputs
 age = st.number_input("Age", min_value=18, max_value=100, value=30)
