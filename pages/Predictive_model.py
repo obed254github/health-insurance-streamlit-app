@@ -38,7 +38,7 @@ if st.button("Predict Charges"):
         <div style="
             position: fixed;
             top: 50%;
-            left: 50%;
+            left: 60%;
             transform: translate(-50%, -50%);
             background-color: rgba(255, 255, 255, 0.8);
             z-index: 9999;
