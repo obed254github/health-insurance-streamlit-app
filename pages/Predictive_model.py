@@ -3,7 +3,6 @@ import pandas as pd
 import numpy as np
 from sklearn.preprocessing import OneHotEncoder, StandardScaler
 from sklearn.compose import ColumnTransformer
-import pickle
 import joblib
 import time
 
@@ -38,14 +37,16 @@ if st.button("Predict Charges"):
         """
         <div style="
             position: fixed;
-            top: 0; left: 0; right: 0; bottom: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: rgba(0,0,0,0);
-            z-index: 9999;">
-            <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExb2Q3eWJqbmMwdzEyZHM2Ymtxenp0dHZsbDAza2JuaXlveTQ2a3QwaSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/VhQFsdrgaARYr6YQIf/giphy.gif" width="150">
-        </div>
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(255, 255, 255, 0.8);
+            z-index: 9999;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.3);">
+            <img src='https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExb2Q3eWJqbmMwdzEyZHM2Ymtxenp0dHZsbDAza2JuaXlveTQ2a3QwaSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/VhQFsdrgaARYr6YQIf/giphy.gif' width='150'>
+        </div>  
         """,
         unsafe_allow_html=True,
     )
