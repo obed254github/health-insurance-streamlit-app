@@ -21,7 +21,7 @@ import pickle
 # ------------------------ #
 st.markdown("---")
 st.markdown(
-    "<h4 style='color: #B22220;'>📊 Insurance cost prediction application</h4>",
+    "<h1 style='color: #B22220;'>Insurance cost prediction application</h1>",
     unsafe_allow_html=True,
 )
 st.markdown("---")
