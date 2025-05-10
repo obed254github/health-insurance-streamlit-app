@@ -163,7 +163,7 @@ with tab1:
     df1 = df[["age", "charges", "bmi"]]
     feature = st.selectbox("Select feature", df1.columns, key="hist_feature")
     fig, ax = plt.subplots(figsize=(7, 5))
-    sns.histplot(df1[feature], kde=True, color="black", ax=ax)
+    sns.histplot(df1[feature], kde=True, color="red", ax=ax)
     ax.set_title(f"Distribution of {feature}")
     fig.tight_layout()
     st.pyplot(fig)
