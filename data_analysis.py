@@ -845,6 +845,6 @@ st.markdown("""
     joblib.dump(preprocessor, "preprocessor.pkl")
 ```
 
-**Note: Do not forget to review my app on the next page**
+**Note**: Do not forget to review my app on the next page
 """)
 st.markdown("---")
