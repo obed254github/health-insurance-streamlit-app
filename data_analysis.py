@@ -284,7 +284,7 @@ data["age_bmi"] = data["age"] * data["bmi"]
 # Creating a variable named children_per_age which divides the number of children by age
 data["children_per_age"] = data["children"] / data["age"]
 
-# Define features and target variable
+# Defining features and target variable
 X = data.drop("charges", axis=1)
 y = data["charges"]
 
@@ -308,25 +308,25 @@ preprocessor = ColumnTransformer(
     ]
 )
 
-# Apply preprocessing to features
+# Applying preprocessing to features
 X_processed = preprocessor.fit_transform(X)
 
-# Split data into training and testing sets
+# Splitting data into training and testing sets
 X_train, X_test, y_train, y_test = train_test_split(
     X_processed, y, test_size=0.2, random_state=42
 )
 
 linear_model = LinearRegression()
 linear_model.fit(X_train, y_train)
-# Make predictions on test set
+# Making predictions on test set
 y_pred = linear_model.predict(X_test)
 
-# Evaluate performance using R² and RMSE
+# Evaluating performance using R² and RMSE
 r2 = r2_score(y_test, y_pred)
 rmse = np.sqrt(mean_squared_error(y_test, y_pred))
 
 
-# Function to calculate adjusted R2
+# A function to calculate adjusted R2
 def adjusted_r2(r2_calc):
     n = len(y_test)  # Number of observations
     p = X.shape[1]  # Number of predictors
@@ -797,13 +797,13 @@ r2_adj = adjusted_r2(r2_xgb)
 print(f"linear model adjusted R2: {r2_adj:.3f}")
 ```
 """)
-# Initialize XGBoost Regressor
+# Initializing XGBoost regressor
 xgb_model = XGBRegressor(
     n_estimators=100, learning_rate=0.1, max_depth=5, random_state=42
 )
 # Fitting the model
 xgb_model.fit(X_train, y_train)
-# Predictions and evaluation
+#Making Predictions and evaluation
 y_pred_xgb = xgb_model.predict(X_test)
 mse_xgb = np.sqrt(mean_squared_error(y_test, y_pred_xgb))
 r2_xgb = r2_score(y_test, y_pred_xgb)
@@ -839,7 +839,7 @@ st.markdown("""
 
 **Saving tuned `RandomForest` regressor model**
 ```python
-    #Saving the model as a pickel file.
+    #Saving the model as a pickel file
     joblib.dump(final_model, "final_model.pkl")
     #Saving the preprocessor as a pickel file.
     joblib.dump(preprocessor, "preprocessor.pkl")
