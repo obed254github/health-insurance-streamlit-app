@@ -163,7 +163,7 @@ with tab1:
     df1 = df[["age", "charges", "bmi"]]
     feature = st.selectbox("Select feature", df1.columns, key="hist_feature")
     fig, ax = plt.subplots(figsize=(7, 5))
-    sns.histplot(df1[feature], kde=True, color="maroon", ax=ax)
+    sns.histplot(df1[feature], kde=True, color="black", ax=ax)
     ax.set_title(f"Distribution of {feature}")
     fig.tight_layout()
     st.pyplot(fig)
@@ -235,7 +235,7 @@ with tab4:
 # ------------------------ #
 st.markdown("---")
 st.markdown(
-    "<h2 style='color: #B22220;'>Data Vizualisations</h2>",
+    "<h2 style='color: #B22220;'>Model building</h2>",
     unsafe_allow_html=True,
 )
 
