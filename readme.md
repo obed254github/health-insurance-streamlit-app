@@ -84,6 +84,7 @@ streamlit run data_analysis.py
 ├── data/
 │   └── HealthData.csv
 ├── pages/
+    └── Predictive_model.py
 ├── requirements.txt
 └── README.md
 ```
@@ -96,7 +97,7 @@ streamlit run data_analysis.py
 | ----------------------- | --------- | ----------- | ----------- |
 | Linear Regression       | 0.865     | 0.859       | 4577.96     |
 | Base Random Forest      | 0.870     | 0.863       | 4509.22     |
-| **Tuned Random Forest** | **0.880** | **0.875**   | **4315.11** |
+| **Tuned Random Forest** | **0.880** | **0.875**   | **4325.11** |
 | LightGBM                | 0.880     | 0.870       | 4400.60     |
 | XGBoost                 | 0.870     | 0.867       | 4442.12     |
 
