@@ -115,7 +115,7 @@ streamlit run data_analysis.py
 
 **Obadiah Kiptoo**  
 _MSc in Data Science & Analytics Grand Valley State University_  
-🔗 [LinkedIn](https://www.linkedin.com/in/yourprofile)  
+🔗 [LinkedIn](https://www.linkedin.com/in/obadiah-kiptoo-85480b175/)  
 📧 obadiahkiptoo1998@gmail.com
 
 ---
