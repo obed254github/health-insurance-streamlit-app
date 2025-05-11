@@ -4,7 +4,7 @@ A user-friendly Streamlit web application that predicts individual health insura
 
 Data analysis page that describes all procedures taken in data analysis and determination of optimal model deployed for predictions.
 
-[Live app](https://health-insurance-app-app-zks4tkjnbak6wcycvr5b76.streamlit.app/) <!-- Replace with your actual image URL -->
+[Live app](https://health-insurance-app-app-zks4tkjnbak6wcycvr5b76.streamlit.app/) 
 
 ---
 
