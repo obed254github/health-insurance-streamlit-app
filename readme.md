@@ -2,7 +2,7 @@
 
 A user-friendly Streamlit web application that predicts individual health insurance charges based on demographic and lifestyle information. Built using **Random Forest**, with support for other models like **Linear Regression**, **LightGBM**, and **XGBoost** for comparison.
 
-![Streamlit App Screenshot](https://user-images.githubusercontent.com/yourusername/demo-app-screenshot.png)| ![Live app](https://health-insurance-app-app-zks4tkjnbak6wcycvr5b76.streamlit.app/) <!-- Replace with your actual image URL -->
+![Streamlit App Screenshot](https://user-images.githubusercontent.com/yourusername/demo-app-screenshot.png)| [Live app](https://health-insurance-app-app-zks4tkjnbak6wcycvr5b76.streamlit.app/) <!-- Replace with your actual image URL -->
 
 ---
 
