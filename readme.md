@@ -26,8 +26,8 @@ A user-friendly Streamlit web application that predicts individual health insura
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/yourusername/insurance-charges-predictor.git
-cd insurance-charges-predictor
+git clone https://github.com/obed254github/health-insurance-streamlit-app.git
+cd health-insurance-streamlit-app
 ```
 
 ### 2. Install dependencies
